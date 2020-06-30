@@ -13,23 +13,32 @@
 		<a href="index.html" style="font-size: 20px">Back</a>
 	</nav>
 	<section>
-		<form method="GET">
+		<form method="POST">
 			<input type="radio" name="salution" value="Mr.">Mr.<br>
 			<input type="radio" name="salution" value="Ms.">Ms.<br>
 			<input type="radio" name="salution" value="Others">Other<br>
 			Name: <input type="text" name="name" required=""><br>
 			Email: <input type="email" name="email" required><br>
+			Set a Password: <input type="password" name="password" required><br>
 			When do you want to go:<input type="date" name="travel_date" required><br>
 			Where do you want to go:
 			<select name="location">
 				<option value="kyoto">Kyoto</option>
 				<option value="nara">Nara</option>
 			</select><br>
-			What interest you:
-			<input type="submit" name="Submit">
+			What interest you:<br>
+			<input type="checkbox" id="shrine" name="building">
+			<label for="shrine">shrine & temple</label><br>
+			<input type="checkbox" id="popculture" name="popculture">
+			<label for="popculture">pop culture</label><br>
+			<input type="checkbox" id="shopping" name="shopping">
+			<label for="shopping">shopping</label><br>
+			<input type="checkbox" id="nature" name="nature">
+			<label for="nature">nature</label><br>
+			<input type="submit" value="submit">
+			<input type="reset">
 		</form>
 	</section>
-
 </body>
 </html>
 
