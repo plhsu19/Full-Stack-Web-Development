@@ -1,8 +1,46 @@
+body {
+	background-image: url(lemon.png);
+	background-size: cover;
+}
+
+* {
+	text-align: right;
+}
+
 h2 {
-	color:blue;
-	background-color:green;
+	text-align: center;
+	font-size: 30px;
+	color:#805F16;
+	border: 5px solid #553B00;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+
 }
 
 p {
-	color: navy;
+	color: #7F1618 !important;
+}
+
+p{
+	color: pink;
+}
+
+.webtext:last-child {
+	border: 5px dashed green;
+}
+
+.active {
+	color: red
+}
+
+#div1 {
+	background-color: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+	background-color: rgba(0, 255, 0, 0.2)
 }
