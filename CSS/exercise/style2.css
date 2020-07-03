@@ -4,43 +4,75 @@ body {
 }
 
 * {
-	text-align: right;
+	text-align: left;
 }
 
 h2 {
 	text-align: center;
-	font-size: 30px;
+	color: red;
+	font-size: 200%;
+}
+
+p {
+	text-align: left;
 	color:#805F16;
 	border: 5px solid #553B00;
 	cursor: pointer;
 }
 
+img {
+	float:right;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	font-size: 20px;
+}
+
 li {
 	list-style: none;
 	display: inline-block;
-
+	border: dashed;
+	font-size: 150%;
 }
 
 p {
-	color: #7F1618 !important;
+	line-height: 40px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 100%;
+	font-family: 'Orbitron', sans-serif;
 }
 
-p{
-	color: pink;
-}
 
-.webtext:last-child {
-	border: 5px dashed green;
-}
 
-.active {
-	color: red
-}
 
-#div1 {
-	background-color: rgba(0, 0, 255, 0.2);
-}
 
-#div2 {
-	background-color: rgba(0, 255, 0, 0.2)
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
