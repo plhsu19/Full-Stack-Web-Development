@@ -5,19 +5,17 @@ h2 {
 
 li {
 	color: black;
-	background-color: green: 
+	text-decoration: none;
 }
 
 p {
 	color: black;
-	font-size: 40px;
+	font-size: 20px;
 }
 
-.boxmodel {
-	border: 5px solid red;
-	display: inline-block;
-	padding: 5px 20px;
-	margin: 0px 20px;
-	width: 22px;
-	height: 40px;
+span {
+	font-size: 5rem;
 }
+
+
+/*comment*/

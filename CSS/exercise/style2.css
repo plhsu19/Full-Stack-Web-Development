@@ -37,6 +37,10 @@ li {
 	font-size: 150%;
 }
 
+a {
+	text-decoration: none;
+}
+
 p {
 	line-height: 40px;
 	font-style: italic;
