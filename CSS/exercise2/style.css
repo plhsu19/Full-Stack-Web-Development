@@ -1,9 +1,6 @@
-img {
-	width: 450px;
-	height: 300px;
-	margin:10px;
+body {
+	margin: 0px;
 }
-
 h1 {
 	font-family: fantasy;
 	font-size: 3em;
@@ -11,10 +8,26 @@ h1 {
 	border-right: 2px solid pink;
 	width: 400px;
 	text-align: center;
+	-moz-box-shadow: 5px 5px 6px #888888;
+	-webkit-box-shadow: 5px 5px 6px #888888;
+	-ms-box-shadow: 5px 5px 6px #888888;
+	-o-box-shadow: 5px 5px 6px #888888;
+	box-shadow: 5px 5px 6px #888888;
+	margin-top: : 10px;
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+img {
+	width: 450px;
+	height: 300px;
+	margin:10px;
+	transition: all 1s;
+}
+
+img:hover {
+	transform: scale(1.1);
 }
