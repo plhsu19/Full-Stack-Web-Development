@@ -4,11 +4,12 @@ h1 {
 }
 
 .robots {
+	display: flex;
+	flex: wrap;
+	justify-content: center;
+
 }
 
-/*.android {
-	display: flex;
-}*/
 
 .head, 
 .left_arm, 
@@ -25,6 +26,7 @@ h1 {
 	height: 150px; 
 	border-radius: 200px 200px 0 0; 
 	margin-bottom: 10px;
+/*	border: 2px solid red;*/
 } 
 
 .eyes {
@@ -39,7 +41,7 @@ h1 {
 .upper_body { 
 	width: 300px; 
 	height: 150px;
-	margin: 0 auto; /*what does margin: 0 auto means?*/
+	/*margin: 0 auto; what does margin: 0 auto means? -> OK*/
 	display: flex;
 } 
 
@@ -61,6 +63,7 @@ h1 {
 	width: 200px; 
 	height: 200px;
 	border-radius: 0 0 50px 50px; 
+/*	border: 2px solid red;*/
 } 
 
 .lower_body { 
@@ -70,8 +73,6 @@ h1 {
 	margin: 0 auto;
 /*	border: 2px solid green;*/
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 } 
 
 .left_leg, .right_leg { 
@@ -93,7 +94,7 @@ h1 {
 }
 
 .right_leg { 
-	margin-right: 45px;
+	margin-left: 30px;
 }
 
 .left_eye, .right_eye { 
