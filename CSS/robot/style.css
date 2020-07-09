@@ -20,6 +20,12 @@ h1 {
 	 background-color: #5f93e8;
 }
 
+.board,
+.left_wheel,
+.right_wheel {
+  background-color: #801515;
+}
+
 .head { 
 	width: 200px; 
 	margin: 0 auto; 
@@ -35,7 +41,7 @@ h1 {
 
 .head:hover {
 	width: 300px;
-    transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .upper_body { 
@@ -57,7 +63,12 @@ h1 {
 
 .right_arm { 
 	margin-left: 10px; 
+	transition: 1s ease;
 } 
+
+.right_arm:hover {
+	margin-top: -90px;
+}
 
 .torso { 
 	width: 200px; 
@@ -68,10 +79,9 @@ h1 {
 
 .lower_body { 
 	width: 200px; 
-	height: 200px;
+	height: 110px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
-/*	border: 2px solid green;*/
 	display: flex;
 } 
 
@@ -118,6 +128,39 @@ h1 {
 	left: 120px; 
 }
 
+
+.board {
+  width: 400px;
+  height: 30px;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: -5px;
+}
+
+.board:hover {
+  width: 800px;
+  transition: 2s ease;
+}
+
+.wheels {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.left_wheel {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 200px;
+}
+
+.right_wheel {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
 
 
 
