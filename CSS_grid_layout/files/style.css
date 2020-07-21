@@ -1,8 +1,10 @@
 .container {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: auto 1fr 2fr; /*could also be px or % or rem*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*could also be px or % or rem*/
     grid-template-rows: 1fr;
+/*    justify-items: end;
+    align-items: start;*/
 }
 
 
