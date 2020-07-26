@@ -1,6 +1,7 @@
 body { 
     /*normalize CSS*/
     margin: auto 0;
+    font-family: Arial;
 }
 .zone {
 /*    padding:30px 50px;
@@ -20,9 +21,19 @@ body {
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
+.box:hover {
+    transform: rotate(-7deg);
+}
 /******************************************************************
 NAV
 *******************************************************************/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main-nav {
     display: flex;
     list-style: none;
@@ -50,6 +61,45 @@ a {
     text-decoration: none;
 }
 
+/******************************************************************
+COVER
+*******************************************************************/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.cover {
+    width: 30rem;
+}
+
+/******************************************************************
+GRID
+*******************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+/******************************************************************
+FOOTER
+*******************************************************************/
+footer {
+    text-align: center;
+}
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
@@ -65,14 +115,6 @@ a {
     background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
 }
 
-/*.main-nav {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-}
-li {
-    display: inline-block;
-    }*/
 
 /***********************************************************************
  *  Red Background
