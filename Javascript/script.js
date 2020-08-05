@@ -1,6 +1,18 @@
-var a = 3;
-var b = 4;
+var user = {
+    name: 'Pei',
+    age: 31,
+    gender: 'male',
+    isMarried: false,
+    spell: ['pirika', 'gogo'],
+    shout: function() {
+        alert('Ahhhhh');
+    }
+};
 
-if (a !== b) {
-    alert('a not equals b');
-}
+var a = [user, {
+    name: 'jess',
+    age: 45
+}]
+
+user2 = {};
+user3 = null;
