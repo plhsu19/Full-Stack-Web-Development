@@ -1,6 +1,10 @@
 var button = document.getElementById('enter');
 var input = document.getElementById('userinput');
 var ul = document.querySelector('ul');
+var li = document.getElementsByTagName('li');
+// var toggle = false;
+
+
 
 function inputLength() {
     return input.value.length
@@ -25,6 +29,13 @@ function addListAfterKeypress(event) {
     }
 }
 
-button.addEventListener('click', addListAfterClick);
+function addRemoveToggle(event) {
+    // console.log(event.target.classList);
+    event.target.classList.toggle('done');
+}
 
+button.addEventListener('click', addListAfterClick);
 input.addEventListener('keypress', addListAfterKeypress);
+ul.addEventListener('click', addRemoveToggle);
+
+
