@@ -29,8 +29,8 @@ JAVASCRIPT CONDITIONALS
 if
 else
 else if
-<!-- ternary operator -->
-<!-- switch -->
+ternary operator
+switch
 
 
 JAVASCRIPT LOGICAL OPERATORS
