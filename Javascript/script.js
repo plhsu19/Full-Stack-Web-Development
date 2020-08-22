@@ -1,7 +1,5 @@
-function add(a, b) {
-    return a + b;
-}
+const compose = (f, g) => (a) => f(g(a));
 
-const addArr = (a, b) => {
-    return a + b;
-}
+const sum = (num) => num + 1;
+
+compose(sum, sum)(5);
