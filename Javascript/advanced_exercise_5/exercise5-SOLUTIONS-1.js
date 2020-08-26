@@ -30,7 +30,7 @@ const array = [
 //Create an array using forEach that has all the usernames with a "!" to each of the usernames
 let newArray = []
 array.forEach(user => {
-	let { username } = user;
+	let { username } = user; //copy the instance variable 'username' in the objec user
 	username = username + "!";
 	newArray.push(username);
 })
