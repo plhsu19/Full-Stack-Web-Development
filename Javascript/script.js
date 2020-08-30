@@ -1,11 +1,29 @@
-console.log(1 == '1')
-
-// Coerce 1 to true, and 0 to false
-if (1) {
-    console.log('condition variable is not 1')
+const basket = ['apples', 'oranges', 'grapes'];
+const detailedBasket = {
+    apples: 5,
+    oranges: 10,
+    grapes: 100,
+}
+// 1
+for (let i = 0; i < basket.length; i++) {
+    console.log(basket[i]);
 }
 
-// Coerce 1 to true, and 0 to false
-if (0) {
-    console.log('condition variable is not 0')
+// 2
+basket.forEach((item) => {
+    console.log(item);
+})
+
+// for-of 
+for (item of basket) {
+    console.log(item);
+}
+
+for (item of 'iterable') {
+    console.log(item)
+}
+
+// for-in
+for (item in detailedBasket) {
+    console.log(item);
 }
