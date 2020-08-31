@@ -34,41 +34,36 @@ const array3 = [] // should return 0
 
 // for of
 function biggestNumberInArray(arr) {
-  if (arr.length === 0) return 0
-
   let biggestNum = -Infinity;
   for (item of arr) {
-    if (typeof(item) === 'number' && item > biggestNum) {
+    if (item > biggestNum) {
       biggestNum = item;
     }
   }
-  return biggestNum
+  return (biggestNum !== -Infinity) ? biggestNum : 0
 }
 
 // for in
 function biggestNumberInArray2(arr) {
-  if (arr.length === 0) return 0
-
   let biggestNum = -Infinity;
   for (propertyName in arr) {
-    if (typeof(arr[propertyName]) === 'number' && arr[propertyName] > biggestNum) {
+    if (arr[propertyName] > biggestNum) {
       biggestNum = arr[propertyName];
     }
   }
-  return biggestNum
+  return (biggestNum !== -Infinity) ? biggestNum : 0
 }
 
 // forEach
 function biggestNumberInArray3(arr) {
-  if (arr.length === 0) return 0
 
   let biggestNum = -Infinity;
   arr.forEach((item) => {
-    if (typeof(item) === "number" && item > biggestNum) {
+    if (item > biggestNum) {
       biggestNum = item;
     } 
   })
-  return biggestNum
+  return (biggestNum !== -Infinity) ? biggestNum : 0
 }
 
 
@@ -82,4 +77,8 @@ amazonBasket = {
 
 function checkBasket(basket, lookingFor) {
 
+  for (item in basket) {
+    if (item === lookingFor) return `${lookingFor} is in the basket`;
+  }
+  return `${lookingFor} is not in the basket`;
 }
