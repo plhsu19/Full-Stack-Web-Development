@@ -1,7 +1,5 @@
-const a = 3;
-const b = 5;
-setTimeout(() => {
-    console.log(a + b)
-}, 5000);
+const largeNumber = 5;
 
-console.log(__dirname)
+module.exports = {
+    largeNumber: largeNumber
+}
