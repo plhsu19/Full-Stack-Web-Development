@@ -1,4 +1,10 @@
-const script = require('./script.js');
-const largeNumber = script.largeNumber;
+// import {largeNumber} from './script.js'
+const s = require('./script.js')
 
-console.log(largeNumber + 10);
+
+const largeNumber = s.largeNumber;
+const readFile = require('fs').readFile;
+
+
+console.log(s.largeNumber + 10);
+console.log(readFile)
