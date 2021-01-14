@@ -1,19 +1,16 @@
-import http from 'http';
+// build a simple server using express
+import express from 'express';
 
-const responseJSON = {
-    name: 'Pikachu',
-    skill: 'electrical attack',
+const app = express();
+
+const pokemon = {
+    pikachu: 'electircal_attack',
 }
-
-const server = http.createServer((request, response) => {
-    // console.log('request header: ', request.headers);
-    // console.log('request url: ', request.url);
-    // console.log('request method: ', request.method);
-    // response.setHeader('Content-Type', 'application/json');
-    // response.end(JSON.stringify(responseJSON));
-
-    response.setHeader('Content-Type', 'text/html');
-    response.end('<h1> Hello Server World!!!');
+// express automatically fillout the content/type for as according 
+// to the content we give to it
+// * req and res are common naming in express
+app.post('/', (req, res) => {
+    res.send(pokemon);
 })
 
-server.listen(3000);
+app.listen(3000)
