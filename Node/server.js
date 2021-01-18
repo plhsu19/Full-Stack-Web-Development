@@ -3,22 +3,17 @@ import express from 'express';
 
 const app = express();
 
-const pokemon = {
+const pokemons = {
     pikachu: 'electircal_attack',
 }
-// express automatically fillout the content/type for as according 
-// to the content we give to it
-// * req and res are common naming in express
-app.get('/profile', (req, res) => {
-    res.send('access the /profile path with GET')
-})
+// middleware to parse the body of message in different form
+// eg, urlencoded, raw(JSON)
+app.use(express.urlencoded({extended: false}))
+app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('access the root path with GET')
-})
-
-app.get('/pikachu', (req, res) => {
-    res.send(pokemon);
+app.post('/profile', (req, res) => {
+    console.log(req.body);
+    res.send('success');
 })
 
 app.listen(3000)
