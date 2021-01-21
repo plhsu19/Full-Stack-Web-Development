@@ -2,7 +2,6 @@
   "name": "Node",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "script.js",
   "scripts": {
     "start": "nodemon server.js"
